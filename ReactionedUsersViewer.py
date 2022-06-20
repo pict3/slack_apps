@@ -81,9 +81,12 @@ def main(args):
         members = get_members()
 
         result = app.client.reactions_get(channel = input_info["channel"], full = True, timestamp = input_info["timestamp"])
+        text = result["message"]["text"]
+        print(text)
+
         reactions = result["message"]["reactions"]
         for reaction in reactions:
-            print("-----", reaction["name"], "-----")
+            print("----- ", reaction["name"], ": ", reaction["count"], " -----")
 
             users = reaction["users"]
             names = get_reacted_users_name(users, members)
