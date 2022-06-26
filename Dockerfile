@@ -12,7 +12,5 @@ COPY ../*.py /app/
 #COPY ReactionedUsersViewer.py /app/
 #ENTRYPOINT python ReactionedUsersViewer.py
 
-CMD [ "python", "ReactionedUsersViewer.py", "https://cloudpack.slack.com/archives/C0310725W/p1655725150168709" ]
-
 #CMD python test2.py
 
