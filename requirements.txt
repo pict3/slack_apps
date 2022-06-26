@@ -1,0 +1,6 @@
+slack_bolt
+
+google-api-python-client==2.47.0
+flask==2.1.0
+functions-framework==3.1.0
+slackclient==2.9.4
